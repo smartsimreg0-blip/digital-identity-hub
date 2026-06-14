@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital ID & Mobile Services: PH Guide</title>
+<meta name="description" content="Understand digital identity, SIM-linked accounts, and mobile account protection with this practical guide for Filipino mobile users.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://example.com/guides/digital-identity-mobile-services-ph">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Digital Identity and Mobile Services: A Consumer Guide for the Philippines">
+<meta property="og:description" content="Understand digital identity, SIM-linked accounts, and mobile account protection with this practical guide for Filipino mobile users.">
+<meta property="og:image" content="images/digital-identity-ph.jpg">
+<meta property="og:url" content="https://example.com/guides/digital-identity-mobile-services-ph">
+<meta property="og:site_name" content="Circuit Brief">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Digital Identity and Mobile Services: A Consumer Guide for the Philippines">
+<meta name="twitter:description" content="Understand digital identity, SIM-linked accounts, and mobile account protection with this practical guide for Filipino mobile users.">
+<meta name="twitter:image" content="images/digital-identity-ph.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Digital Identity and Mobile Services: A Consumer Guide for the Philippines",
+  "description": "Understand digital identity, SIM-linked accounts, and mobile account protection with this practical guide for Filipino mobile users.",
+  "image": "images/digital-identity-ph.jpg",
+  "author": { "@type": "Organization", "name": "Circuit Brief" },
+  "publisher": { "@type": "Organization", "name": "Circuit Brief" },
+  "datePublished": "2025-06-12",
+  "dateModified": "2025-06-12"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is my mobile number considered part of my digital identity?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Your mobile number is often used as a primary verification point for banking apps, e-wallets, and government portals, which makes it a core piece of your overall digital identity." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I don't register my SIM card?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Under Republic Act 11934, SIM cards that are not registered with a valid government ID may be deactivated by the network operator, cutting off calls, texts, and mobile data on that line." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a SIM swap and why is it dangerous?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A SIM swap occurs when someone fraudulently transfers your phone number to a SIM card they control. This can let them intercept one-time passwords sent by SMS and gain access to your linked accounts." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use SMS codes or an authenticator app for verification?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Authenticator apps are generally more secure than SMS codes because they generate codes locally on your device and are not affected by SIM swap fraud or network interception." }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I report mobile-related scams in the Philippines?",
+      "acceptedAnswer": { "@type": "Answer", "text": "You can report scam messages and calls to your mobile carrier through their official channels, and to the National Telecommunications Commission, which handles consumer complaints for the telecom sector." }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://example.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Mobile & Connectivity", "item": "https://example.com/mobile-connectivity" },
+    { "@type": "ListItem", "position": 3, "name": "Digital Identity and Mobile Services", "item": "https://example.com/guides/digital-identity-mobile-services-ph" }
+  ]
+}
+</script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap');
+
+  :root {
+    --ink: #061b33;
+    --ink-soft: #2c4566;
+    --body: #4e5d75;
+    --sky: #3a8ee6;
+    --sky-deep: #1f5fae;
+    --cyan: #16d6c4;
+    --white: #ffffff;
+    --mist: #eef4fb;
+    --line: #d7e2f0;
+    --warn: #e8973a;
+    --r-sm: 10px;
+    --r-md: 16px;
+    --r-lg: 28px;
+    --shadow: 0 6px 28px rgba(6,27,51,0.08);
+    --shadow-strong: 0 20px 60px rgba(6,27,51,0.18);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    color: var(--body);
+    background: var(--white);
+    line-height: 1.7;
+  }
+
+  img { max-width: 100%; display: block; }
+
+  /* ===================== NAV ===================== */
+  .topbar {
+    background: var(--ink);
+    color: rgba(255,255,255,0.55);
+    font-size: 0.78rem;
+    padding: 8px 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 400;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-row {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--ink);
+  }
+
+  .brand-mark {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: conic-gradient(from 180deg, var(--cyan), var(--sky), var(--sky-deep), var(--cyan));
+    flex-shrink: 0;
+  }
+
+  .brand-text {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .brand-text small {
+    display: block;
+    font-size: 0.62rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--sky);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 0.86rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--sky-deep); }
+
+  .nav-toggle {
+    display: none;
+    background: var(--mist);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    width: 42px; height: 38px;
+    color: var(--ink);
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  /* ===================== HERO ===================== */
+  .hero {
+    padding: 56px 24px 0;
+  }
+
+  .hero-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .hero-top {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 56px;
+    align-items: center;
+    padding-bottom: 48px;
+  }
+
+  .kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--sky-deep);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .kicker::before {
+    content: '';
+    width: 28px; height: 2px;
+    background: var(--cyan);
+  }
+
+  .hero h1 {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: var(--ink);
+    line-height: 1.2;
+    margin-bottom: 22px;
+  }
+
+  .hero h1 .ul { text-decoration: underline; text-decoration-color: var(--cyan); text-decoration-thickness: 4px; text-underline-offset: 6px; }
+
+  .hero-sub {
+    font-size: 1.05rem;
+    color: var(--body);
+    line-height: 1.85;
+    max-width: 52ch;
+    margin-bottom: 28px;
+  }
+
+  .hero-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .hero-tags span {
+    background: var(--mist);
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 100px;
+  }
+
+  .hero-visual {
+    position: relative;
+  }
+
+  .hero-visual .ring {
+    position: absolute;
+    inset: -20px;
+    border: 2px dashed var(--line);
+    border-radius: var(--r-lg);
+    z-index: 0;
+  }
+
+  .hero-visual img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: var(--r-lg);
+    position: relative;
+    z-index: 1;
+    box-shadow: var(--shadow-strong);
+  }
+
+  .hero-figure-tag {
+    position: absolute;
+    bottom: 18px; left: 18px;
+    z-index: 2;
+    background: rgba(6,27,51,0.82);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 100px;
+    backdrop-filter: blur(6px);
+  }
+
+  /* ===================== STATS STRIP ===================== */
+  .stats-strip {
+    background: var(--ink);
+    padding: 0;
+  }
+
+  .stats-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .stat-box {
+    padding: 36px 32px;
+    border-right: 1px solid rgba(255,255,255,0.08);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stat-box:last-child { border-right: none; }
+
+  .stat-box::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: var(--cyan);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.4s;
+  }
+
+  .stat-box:hover::before { transform: scaleY(1); }
+
+  .stat-value {
+    font-family: 'Source Serif 4', serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  .stat-value .accent { color: var(--cyan); }
+
+  .stat-desc {
+    font-size: 0.84rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.6;
+  }
+
+  /* ===================== MAIN GRID ===================== */
+  .main-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 64px 24px 100px;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 64px;
+  }
+
+  /* ===================== ARTICLE ===================== */
+  article p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: var(--body);
+  }
+
+  article > p.lede {
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    line-height: 1.9;
+  }
+
+  article h2 {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--ink);
+    margin: 54px 0 18px;
+    scroll-margin-top: 100px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  article > h2:first-of-type { margin-top: 0; }
+
+  article h2 .num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--white);
+    background: var(--sky-deep);
+    width: 34px; height: 34px;
+    border-radius: 9px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+
+  article h3 {
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+
+  article a {
+    color: var(--sky-deep);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid var(--cyan);
+    transition: color 0.2s, background 0.2s;
+  }
+
+  article a:hover { background: rgba(22,214,196,0.12); }
+
+  /* ===================== TOC ===================== */
+  .toc-sidebar {
+    position: sticky;
+    top: 96px;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .toc-box {
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    padding: 24px;
+  }
+
+  .toc-box-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--sky-deep);
+    margin-bottom: 16px;
+  }
+
+  .toc-box ol {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .toc-box a {
+    display: block;
+    padding: 9px 10px;
+    border-radius: 8px;
+    font-size: 0.83rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: none !important;
+    position: relative;
+    padding-left: 18px;
+    transition: background 0.18s, color 0.18s;
+  }
+
+  .toc-box a::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 50%;
+    transform: translateY(-50%);
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--line);
+    transition: background 0.18s;
+  }
+
+  .toc-box a:hover, .toc-box a.active {
+    background: var(--mist);
+    color: var(--sky-deep);
+  }
+
+  .toc-box a.active { font-weight: 700; }
+  .toc-box a.active::before { background: var(--cyan); }
+
+  .toc-side-card {
+    background: var(--mist);
+    border-radius: var(--r-md);
+    padding: 22px;
+  }
+
+  .toc-side-card h4 {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--sky-deep);
+    margin-bottom: 12px;
+  }
+
+  .toc-side-card p {
+    font-size: 0.83rem;
+    color: var(--ink-soft);
+    margin-bottom: 0;
+    line-height: 1.7;
+  }
+
+  /* ===================== INFO BOX ===================== */
+  .info-box {
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--cyan);
+    border-radius: 0 var(--r-md) var(--r-md) 0;
+    padding: 22px 26px;
+    margin: 28px 0;
+    background: var(--mist);
+  }
+
+  .info-box .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--sky-deep);
+    margin-bottom: 8px;
+  }
+
+  .info-box p { margin-bottom: 0; color: var(--ink-soft); font-size: 0.94rem; }
+
+  /* ===================== FEATURE CARDS ===================== */
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 30px 0;
+  }
+
+  .feature-grid.two-col { grid-template-columns: repeat(2, 1fr); }
+
+  .feature-card {
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    padding: 24px;
+    transition: transform 0.22s, box-shadow 0.22s, border-color 0.22s;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+    border-color: var(--cyan);
+  }
+
+  .feature-card .icon-circle {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--mist);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+    border: 1px solid var(--line);
+  }
+
+  .feature-card p {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+    color: var(--body);
+  }
+
+  /* ===================== TIMELINE ===================== */
+  .timeline-wrap {
+    margin: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .timeline-step {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 24px;
+    position: relative;
+    padding-bottom: 32px;
+  }
+
+  .timeline-step:last-child { padding-bottom: 0; }
+
+  .timeline-step::before {
+    content: '';
+    position: absolute;
+    left: 119px; top: 28px; bottom: 0;
+    width: 2px;
+    background: var(--line);
+  }
+
+  .timeline-step:last-child::before { display: none; }
+
+  .timeline-marker {
+    text-align: right;
+    font-weight: 700;
+    color: var(--ink);
+    font-size: 0.92rem;
+    padding-top: 2px;
+  }
+
+  .timeline-marker::after {
+    content: '';
+    display: block;
+    margin-top: 8px;
+    margin-left: auto;
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 3px solid var(--cyan);
+  }
+
+  .timeline-body h3 { margin-bottom: 6px; }
+  .timeline-body p { font-size: 0.9rem; margin-bottom: 0; }
+
+  /* ===================== TABLE ===================== */
+  .table-scroll {
+    overflow-x: auto;
+    margin: 30px 0;
+    border-radius: var(--r-md);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    min-width: 580px;
+  }
+
+  thead tr { background: var(--mist); }
+
+  thead th {
+    text-align: left;
+    padding: 15px 20px;
+    font-weight: 700;
+    font-size: 0.76rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink);
+    border-bottom: 2px solid var(--cyan);
+  }
+
+  tbody tr { border-bottom: 1px solid var(--line); }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: var(--mist); }
+
+  tbody td { padding: 14px 20px; vertical-align: top; color: var(--body); }
+  tbody td:first-child { font-weight: 700; color: var(--ink); }
+
+  .chip {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 100px;
+    font-size: 0.72rem;
+    font-weight: 700;
+  }
+
+  .chip-priority { background: #fdeee0; color: #b5650f; }
+  .chip-standard { background: #e3effb; color: var(--sky-deep); }
+  .chip-routine { background: #e0f9f5; color: #0e8f80; }
+
+  /* ===================== QUOTE ===================== */
+  .quote-card {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 24px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    padding: 36px 40px;
+    margin: 40px 0;
+    background: var(--mist);
+  }
+
+  .quote-mark {
+    font-family: 'Source Serif 4', serif;
+    font-size: 4.5rem;
+    color: var(--cyan);
+    line-height: 1;
+  }
+
+  .quote-card p {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.25rem;
+    color: var(--ink);
+    line-height: 1.6;
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+
+  .quote-card cite {
+    font-style: normal;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sky-deep);
+  }
+
+  /* ===================== KEY TAKEAWAYS ===================== */
+  .takeaway-panel {
+    background: var(--ink);
+    border-radius: var(--r-lg);
+    padding: 40px 44px;
+    margin: 40px 0;
+    color: var(--white);
+  }
+
+  .takeaway-panel h2 {
+    color: var(--white) !important;
+    margin: 0 0 22px !important;
+  }
+
+  .takeaway-panel h2 .num { background: var(--cyan); color: var(--ink); }
+
+  .takeaway-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .takeaway-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .takeaway-item .bullet {
+    width: 26px; height: 26px;
+    border-radius: 7px;
+    background: rgba(22,214,196,0.15);
+    border: 1px solid rgba(22,214,196,0.4);
+    color: var(--cyan);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .takeaway-item p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.78);
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+
+  /* ===================== FAQ ===================== */
+  .faq-list { margin: 26px 0; }
+
+  .faq-row {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .faq-row:first-child { border-top: 1px solid var(--line); }
+
+  .faq-q {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    padding: 22px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .faq-q:hover { color: var(--sky-deep); }
+
+  .faq-q .qnum {
+    font-family: 'Source Serif 4', serif;
+    color: var(--cyan);
+    font-size: 1.1rem;
+    margin-right: 8px;
+  }
+
+  .faq-marker {
+    flex-shrink: 0;
+    width: 24px; height: 24px;
+    position: relative;
+  }
+
+  .faq-marker::before, .faq-marker::after {
+    content: '';
+    position: absolute;
+    background: var(--ink);
+    transition: transform 0.3s, background 0.2s;
+  }
+
+  .faq-marker::before { top: 50%; left: 0; width: 100%; height: 2px; transform: translateY(-50%); }
+  .faq-marker::after { left: 50%; top: 0; height: 100%; width: 2px; transform: translateX(-50%); }
+
+  .faq-row.open .faq-marker::after { transform: translateX(-50%) rotate(90deg); opacity: 0; }
+  .faq-row.open .faq-marker::before { background: var(--sky-deep); }
+
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+  .faq-a-inner { padding: 0 4px 22px 38px; font-size: 0.92rem; color: var(--body); line-height: 1.8; }
+  .faq-row.open .faq-a { max-height: 280px; }
+
+  /* ===================== CONCLUSION ===================== */
+  .conclusion-block {
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    padding: 40px 44px;
+    margin: 40px 0 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .conclusion-block::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 5px;
+    background: linear-gradient(90deg, var(--cyan), var(--sky), var(--sky-deep));
+  }
+
+  .conclusion-block h2 { margin-top: 0 !important; }
+
+  /* ===================== FOOTER ===================== */
+  footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.6);
+    padding: 64px 24px 32px;
+  }
+
+  .footer-inner { max-width: 1280px; margin: 0 auto; }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding-bottom: 44px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .footer-brand .brand-text { color: var(--white); }
+
+  .footer-brand p {
+    font-size: 0.86rem;
+    line-height: 1.8;
+    margin-top: 16px;
+    max-width: 320px;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .footer-col h4 {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--cyan);
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+
+  .footer-col a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    font-size: 0.86rem;
+    transition: color 0.2s;
+  }
+
+  .footer-col a:hover { color: var(--cyan); }
+
+  .footer-disclaimer {
+    font-size: 0.8rem;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.45);
+    margin: 28px 0;
+    max-width: 80ch;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    font-size: 0.78rem;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+
+  /* ===================== RESPONSIVE ===================== */
+  @media (max-width: 1024px) {
+    .main-grid { grid-template-columns: 1fr; }
+    .toc-sidebar { display: none; }
+    .hero-top { grid-template-columns: 1fr; gap: 36px; }
+    .hero-visual { order: -1; }
+    .feature-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 720px) {
+    .nav-links { display: none; }
+    .nav-toggle { display: flex; align-items: center; justify-content: center; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .stat-box { border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .feature-grid, .feature-grid.two-col { grid-template-columns: 1fr; }
+    .takeaway-grid { grid-template-columns: 1fr; }
+    .timeline-step { grid-template-columns: 70px 1fr; gap: 14px; }
+    .timeline-step::before { left: 79px; }
+    .timeline-marker { font-size: 0.78rem; }
+    .quote-card { grid-template-columns: 1fr; padding: 28px; }
+    .quote-mark { font-size: 3rem; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+    .main-grid { padding: 48px 18px 72px; }
+    .hero { padding: 40px 18px 0; }
+  }
+
+  @media (max-width: 480px) {
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .stats-grid { grid-template-columns: 1fr; }
+    .stat-box { border-right: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">Consumer technology explainers — independent, ad-free reading</div>
+
+<nav>
+  <div class="nav-row">
+    <a href="#" class="brand">
+      <span class="brand-mark"></span>
+      <span class="brand-text">Circuit Brief<small>Mobile & Identity</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#identity">Identity</a></li>
+      <li><a href="#evolution">Services</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#privacy">Privacy</a></li>
+      <li><a href="#future">Trends</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu">≡</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div>
+        <span class="kicker">Consumer Guide · Philippines</span>
+        <h1>Your phone number is now <span class="ul">your identity</span>. Here's what that means.</h1>
+        <p class="hero-sub">A practical look at how mobile numbers, SIM registration, and everyday apps quietly became the backbone of digital identity in the Philippines — and how to manage that responsibly.</p>
+        <div class="hero-tags">
+          <span>SIM Registration</span>
+          <span>Account Security</span>
+          <span>Mobile Wallets</span>
+          <span>Consumer Rights</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="ring"></div>
+        <img src="images/digital-identity-ph.jpg" alt="Digital Identity and Mobile Services in the Philippines" loading="eager" width="1200" height="900">
+        <span class="hero-figure-tag">Mobile-first identity, explained</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="stats-strip" aria-label="Key figures">
+  <div class="stats-grid">
+    <div class="stat-box">
+      <div class="stat-value">RA <span class="accent">11934</span></div>
+      <div class="stat-desc">the law requiring SIM registration with verified ID for all subscribers</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value">3<span class="accent">+</span></div>
+      <div class="stat-desc">major services commonly linked to a single mobile number — banking, messaging, e-wallets</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value"><span class="accent">2</span>-Step</div>
+      <div class="stat-desc">verification recommended for any account holding money or personal data</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value">0<span class="accent">¢</span></div>
+      <div class="stat-desc">cost of the basic security habits covered in this guide</div>
+    </div>
+  </div>
+</section>
+
+<div class="main-grid">
+
+  <article>
+
+    <p class="lede">A SIM card used to be a simple thing: insert it, get a number, start calling. That's no longer the whole story. For most people in the Philippines today, a mobile number is the thread that ties together banking, messaging, government records, and dozens of smaller accounts — which makes it worth understanding properly.</p>
+
+    <p>This guide walks through what digital identity actually looks like in practice, how mobile services got here, and what specific habits make the biggest difference in keeping your accounts safe.</p>
+
+    <h2 id="identity"><span class="num">01</span>What Is Digital Identity?</h2>
+
+    <p>Digital identity is best thought of as a layered structure rather than a single document. At the base sits your legal identity — the government IDs that prove who you are. Above that sits your registered SIM, which under current regulations must be tied to one of those legal IDs. And above that sit the dozens of accounts that trust your phone number as proof that you are who you say you are.</p>
+
+    <p>That last layer is where most people interact with their digital identity daily, often without thinking about it. Logging into a banking app with a fingerprint, receiving a delivery code by SMS, or confirming a money transfer through an e-wallet are all small moments where your digital identity is doing quiet work in the background.</p>
+
+    <div class="info-box">
+      <div class="label">In Plain Terms</div>
+      <p>If someone gained control of your SIM card today, how many other accounts could they access using "forgot password" or "verify by SMS" options? For most people, the honest answer is more than they'd expect.</p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon-circle">🪪</div>
+        <h3>Legal ID Layer</h3>
+        <p>Government-issued identification — passport, driver's license, PhilSys ID — forms the verified foundation behind your registered SIM.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle">📱</div>
+        <h3>SIM & Carrier Layer</h3>
+        <p>Your registered mobile number, account PIN, and carrier-held details that determine who can make changes to your line.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle">💬</div>
+        <h3>Application Layer</h3>
+        <p>Every app and service that uses your number for login, recovery, or verification — from messaging apps to e-wallets to delivery platforms.</p>
+      </div>
+    </div>
+
+    <h2 id="evolution"><span class="num">02</span>How Mobile Subscriber Services Have Evolved</h2>
+
+    <p>It helps to see this as a progression rather than a sudden change. Each step below built directly on the one before it, and together they explain why a phone number carries so much weight today.</p>
+
+    <div class="timeline-wrap">
+      <div class="timeline-step">
+        <div class="timeline-marker">2012–2016</div>
+        <div class="timeline-body">
+          <h3>Smartphones Replace Basic Handsets</h3>
+          <p>As affordable smartphones became widespread, mobile data overtook SMS as the main reason people topped up their accounts, setting the stage for app-based services.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="timeline-marker">2017–2020</div>
+        <div class="timeline-body">
+          <h3>E-Wallets Go Mainstream</h3>
+          <p>Mobile wallet apps grew from niche tools into everyday payment methods, with phone numbers serving as account identifiers for transfers and merchant payments alike.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="timeline-marker">2021</div>
+        <div class="timeline-body">
+          <h3>A Third Major Operator Arrives</h3>
+          <p>DITO Telecommunity launched commercially, adding competition to a market previously shared by two operators and prompting wider network investment.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="timeline-marker">2022–Today</div>
+        <div class="timeline-body">
+          <h3>Mandatory SIM Registration</h3>
+          <p>Republic Act 11934 formally linked SIM cards to verified identities, changing how subscriber accounts are managed and how lost or compromised numbers are handled.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="security"><span class="num">03</span>Understanding Secure Mobile Communication</h2>
+
+    <p>Most mobile-related fraud doesn't rely on sophisticated hacking. It relies on convincing someone to hand over information voluntarily, or on exploiting weak points in how accounts are recovered. Understanding these weak points is the first step toward closing them.</p>
+
+    <div class="info-box">
+      <div class="label">The SIM Swap Problem</div>
+      <p>A SIM swap happens when someone impersonates you to your carrier, requesting that your number be moved to a SIM they control. If they succeed, SMS-based codes — including banking OTPs — start arriving on their device instead of yours.</p>
+    </div>
+
+    <div class="feature-grid two-col">
+      <div class="feature-card">
+        <div class="icon-circle">⚠️</div>
+        <h3>Warning Sign: Lost Signal</h3>
+        <p>If your phone unexpectedly shows no service in a place where it normally works fine, that's worth checking immediately — not dismissing as a network glitch.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle">🔐</div>
+        <h3>Stronger Option: App Codes</h3>
+        <p>Authenticator apps generate verification codes on your device itself, so they aren't affected even if your SIM is compromised.</p>
+      </div>
+    </div>
+
+    <p>It's also worth being skeptical of messages that create urgency — "your account will be suspended," "verify now to avoid charges," and similar phrasing are common tactics designed to short-circuit careful thinking.</p>
+
+    <h2 id="management"><span class="num">04</span>Managing Mobile Accounts Responsibly</h2>
+
+    <p>Beyond security settings, there's a simpler habit that pays off: knowing what's actually active on your account. Prepaid and postpaid subscribers alike can end up with recurring charges for services they signed up for once and forgot about.</p>
+
+    <p>For subscribers who want a clearer breakdown of account features, registration status, and related topics, <a href="https://smartsimreg.ph/" target="_blank" rel="noopener noreferrer">Smart SIM Help</a> offers explanations written for everyday users rather than technical staff.</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon-circle">📋</div>
+        <h3>Review Subscriptions</h3>
+        <p>Periodically check your account dashboard or dial your carrier's balance-check code to spot unfamiliar recurring services.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle">✉️</div>
+        <h3>Keep Recovery Info Current</h3>
+        <p>An up-to-date email address with your carrier gives you a way back into your account that doesn't depend entirely on your SIM.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle">🔢</div>
+        <h3>Use a Carrier PIN</h3>
+        <p>A separate account PIN adds a checkpoint before anyone — including someone posing as you — can request changes to your line.</p>
+      </div>
+    </div>
+
+    <h2 id="privacy"><span class="num">05</span>Digital Privacy and Account Protection</h2>
+
+    <p>The regulatory side of this picture matters too. The Data Privacy Act sets baseline rules for how companies, including telecom operators, must handle personal information. Separately, the <a href="https://www.ntc.gov.ph/" target="_blank" rel="noopener noreferrer">National Telecommunications Commission</a> handles complaints related to mobile service quality, billing disputes, and unwanted messages.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Protective Step</th>
+            <th>Main Benefit</th>
+            <th>Typical Setup Time</th>
+            <th>Priority</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SIM PIN Lock</td>
+            <td>Blocks SIM use on another device if your phone is lost</td>
+            <td>Under 2 minutes</td>
+            <td><span class="chip chip-priority">High</span></td>
+          </tr>
+          <tr>
+            <td>Carrier Account PIN</td>
+            <td>Prevents unauthorized line changes or porting requests</td>
+            <td>5–10 minutes via support</td>
+            <td><span class="chip chip-priority">High</span></td>
+          </tr>
+          <tr>
+            <td>Authenticator App</td>
+            <td>Removes reliance on SMS codes for sensitive logins</td>
+            <td>10–15 minutes per account</td>
+            <td><span class="chip chip-priority">High</span></td>
+          </tr>
+          <tr>
+            <td>Spam/Scam Reporting</td>
+            <td>Helps carriers and regulators act on fraud patterns</td>
+            <td>Under 1 minute per report</td>
+            <td><span class="chip chip-standard">Medium</span></td>
+          </tr>
+          <tr>
+            <td>Monthly Subscription Check</td>
+            <td>Catches unwanted recurring charges early</td>
+            <td>2–3 minutes monthly</td>
+            <td><span class="chip chip-routine">Routine</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div>
+        <p>Most account compromises don't start with a clever hack. They start with someone answering a question they shouldn't have, under pressure, on a normal afternoon.</p>
+        <cite>Consumer Protection Perspective</cite>
+      </div>
+    </div>
+
+    <h2 id="practices"><span class="num">06</span>Consumer Best Practices</h2>
+
+    <p>None of the habits below require technical skill. What they require is doing them once, and then checking in occasionally — which is exactly the kind of low-effort, high-value action that tends to get skipped until something goes wrong.</p>
+
+    <div class="takeaway-panel">
+      <h2><span class="num">★</span>Key Takeaways</h2>
+      <div class="takeaway-grid">
+        <div class="takeaway-item"><span class="bullet">1</span><p>Make sure your SIM registration details are accurate and keep proof of completion.</p></div>
+        <div class="takeaway-item"><span class="bullet">2</span><p>Switch sensitive accounts from SMS codes to an authenticator app where possible.</p></div>
+        <div class="takeaway-item"><span class="bullet">3</span><p>Set both a SIM PIN and a separate carrier account PIN.</p></div>
+        <div class="takeaway-item"><span class="bullet">4</span><p>Treat urgent-sounding messages with extra skepticism, not less.</p></div>
+        <div class="takeaway-item"><span class="bullet">5</span><p>Check active subscriptions and billing statements on a regular basis.</p></div>
+        <div class="takeaway-item"><span class="bullet">6</span><p>Report scam messages to your carrier and the NTC when you spot them.</p></div>
+        <div class="takeaway-item"><span class="bullet">7</span><p>Keep your phone's software updated to patch known vulnerabilities.</p></div>
+        <div class="takeaway-item"><span class="bullet">8</span><p>Use distinct, strong passwords across the accounts tied to your number.</p></div>
+      </div>
+    </div>
+
+    <h2 id="future"><span class="num">07</span>Future Trends in Mobile Technology</h2>
+
+    <p>Two things are happening in parallel. Network operators, including <a href="https://www.smart.com.ph/" target="_blank" rel="noopener noreferrer">Smart Communications</a> and <a href="https://www.globe.com.ph/" target="_blank" rel="noopener noreferrer">Globe Telecom</a>, continue extending 5G coverage into more cities. At the same time, government agencies are leaning further into mobile-linked verification for services that used to require in-person visits.</p>
+
+    <p>The practical takeaway is that mobile numbers aren't going to become less important — they're becoming more deeply woven into everyday administrative life. Treating your number, and the accounts linked to it, with the same care you'd give a physical ID card is a reasonable standard going forward.</p>
+
+    <div class="info-box">
+      <div class="label">Looking Ahead</div>
+      <p>As more government and financial services move toward mobile-first verification, the small security habits in this guide shift from "good practice" to something closer to basic digital literacy.</p>
+    </div>
+
+    <h2 id="faq"><span class="num">08</span>Frequently Asked Questions</h2>
+
+    <div class="faq-list">
+      <div class="faq-row">
+        <button class="faq-q" aria-expanded="false"><span><span class="qnum">Q.</span>Is my mobile number considered part of my digital identity?</span><span class="faq-marker"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes. Your mobile number is often used as a primary verification point for banking apps, e-wallets, and government portals, which makes it a core piece of your overall digital identity — even though it doesn't feel that way in everyday use.</div></div>
+      </div>
+      <div class="faq-row">
+        <button class="faq-q" aria-expanded="false"><span><span class="qnum">Q.</span>What happens if I don't register my SIM card?</span><span class="faq-marker"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Under Republic Act 11934, SIM cards that are not registered with a valid government ID may be deactivated by the network operator, cutting off calls, texts, and mobile data on that line until registration is completed.</div></div>
+      </div>
+      <div class="faq-row">
+        <button class="faq-q" aria-expanded="false"><span><span class="qnum">Q.</span>What is a SIM swap and why is it dangerous?</span><span class="faq-marker"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">A SIM swap occurs when someone fraudulently transfers your phone number to a SIM card they control. This can let them intercept one-time passwords sent by SMS and gain access to your linked banking, email, and social accounts.</div></div>
+      </div>
+      <div class="faq-row">
+        <button class="faq-q" aria-expanded="false"><span><span class="qnum">Q.</span>Should I use SMS codes or an authenticator app for verification?</span><span class="faq-marker"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Authenticator apps are generally more secure than SMS codes because they generate codes locally on your device and aren't affected by SIM swap fraud or network-level interception, making them the better choice for sensitive accounts.</div></div>
+      </div>
+      <div class="faq-row">
+        <button class="faq-q" aria-expanded="false"><span><span class="qnum">Q.</span>Where can I report mobile-related scams in the Philippines?</span><span class="faq-marker"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">You can report scam messages and calls to your mobile carrier through their official channels, and to the National Telecommunications Commission, which handles consumer complaints for the telecom sector and can act on patterns reported by multiple users.</div></div>
+      </div>
+    </div>
+
+    <div class="conclusion-block">
+      <h2 id="conclusion"><span class="num">09</span>Conclusion</h2>
+      <p>The phone in your pocket has quietly become one of the most important pieces of identification you carry — not because of what it is, but because of everything it's connected to. That shift happened gradually enough that most people never had a single moment to "catch up" on it.</p>
+      <p>This guide is that catch-up. The steps involved — registering your SIM properly, setting a couple of PINs, switching to app-based verification where it counts, and staying alert to urgency-driven messages — are small individually. Together, they form a reasonable baseline for treating your digital identity with the seriousness it now deserves.</p>
+    </div>
+
+  </article>
+
+  <aside class="toc-sidebar">
+    <nav class="toc-box" aria-label="Table of contents">
+      <div class="toc-box-label">Contents</div>
+      <ol>
+        <li><a href="#identity" class="toc-link">What Is Digital Identity?</a></li>
+        <li><a href="#evolution" class="toc-link">How Services Evolved</a></li>
+        <li><a href="#security" class="toc-link">Secure Communication</a></li>
+        <li><a href="#management" class="toc-link">Managing Accounts</a></li>
+        <li><a href="#privacy" class="toc-link">Privacy & Protection</a></li>
+        <li><a href="#practices" class="toc-link">Best Practices</a></li>
+        <li><a href="#future" class="toc-link">Future Trends</a></li>
+        <li><a href="#faq" class="toc-link">FAQ</a></li>
+        <li><a href="#conclusion" class="toc-link">Conclusion</a></li>
+      </ol>
+    </nav>
+    <div class="toc-side-card">
+      <h4>Reading Time</h4>
+      <p>Approximately 8–9 minutes. Written for general readers — no technical background required.</p>
+    </div>
+  </aside>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <span class="brand-mark"></span>
+          <span class="brand-text">Circuit Brief<small style="color: var(--cyan);">Mobile & Identity</small></span>
+        </a>
+        <p>Independent explainers on mobile technology, digital identity, and consumer protection for readers in the Philippines. Not affiliated with any network operator.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="#identity">Digital Identity</a></li>
+          <li><a href="#security">Security Basics</a></li>
+          <li><a href="#privacy">Privacy & Rights</a></li>
+          <li><a href="#future">Future Trends</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Official Links</h4>
+        <ul>
+          <li><a href="https://www.ntc.gov.ph/" target="_blank" rel="noopener noreferrer">NTC Philippines</a></li>
+          <li><a href="https://www.smart.com.ph/" target="_blank" rel="noopener noreferrer">Smart Communications</a></li>
+          <li><a href="https://www.globe.com.ph/" target="_blank" rel="noopener noreferrer">Globe Telecom</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>More</h4>
+        <ul>
+          <li><a href="#faq">Reader FAQ</a></li>
+          <li><a href="#conclusion">Summary</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-disclaimer">This article is provided for general educational purposes and reflects publicly available information at the time of writing. It is not legal, financial, or technical advice. For questions about your specific account, contact your service provider or the relevant government agency directly.</p>
+    <div class="footer-bottom">
+      <span>© 2025 Circuit Brief. All rights reserved.</span>
+      <span>Independent · Reader-funded · No ads</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const row = btn.closest('.faq-row');
+      const wasOpen = row.classList.contains('open');
+      document.querySelectorAll('.faq-row.open').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!wasOpen) {
+        row.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  const sections = document.querySelectorAll('article h2[id]');
+  const tocLinks = document.querySelectorAll('.toc-link');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tocLinks.forEach(l => l.classList.remove('active'));
+        const match = document.querySelector('.toc-link[href="#' + entry.target.id + '"]');
+        if (match) match.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-100px 0px -60% 0px', threshold: 0 });
+  sections.forEach(s => obs.observe(s));
+
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+        revealObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.feature-card, .stat-box, .timeline-step').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(16px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    revealObs.observe(el);
+  });
+</script>
+
+</body>
+</html>
